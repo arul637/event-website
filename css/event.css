@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home-title {
+    width: 100%;
+    text-align: center;
+    font-size: 3.5rem;
+    margin-top: 5rem;
+    font-family: var(--zen-font);
+    color: var(--accent-color);
+    transition: all .7s;
+    line-height: 2.8rem;
+}
+
+.events {
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    transition: all .7s;
+}
+
+.about-event {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 3rem;
+    transition: all .7s;
+}
+
+.about-event h2 {
+    font-family: 'Orbitron';
+    font-size: 4.5rem;
+    color: white;
+    transition: all .7s;
+}
+
+.about-event p {
+    opacity: 60%;
+    margin: 0;
+    font-size: 1rem;
+    transition: all .7s;
+}
+
+.about-event div h3 {
+    font-size: 1.6rem;
+    transition: all .7s;
+}
+
+.about-event div ol li {
+    opacity: 80%;
+    margin-top: .5rem;
+    margin-left: 2rem;
+    font-size: 1rem;
+    transition: all .7s;
+}
+
+.about-event div h4 {
+    margin-top: .6rem;
+    transition: all .7s;
+}
+
+.about-event a {
+    text-decoration: none;
+    color: black;
+    padding: 0.6rem;
+    transition: all .7s;
+    font-size: 1.3rem;
+    border-radius: 0.3rem;
+    background-color: var(--accent-color);
+}
+
+.about-event a:hover {
+    background-color: black;
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+
+.card {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: auto;
+}
+
+.card-image {
+    width: 20rem;
+    transition: all .7s;
+    background-position: 0% 0%;
+    border: 2px solid var(--accent-color);
+}
+
+.card-overlay{
+    width: 100%;
+    height: 100%;
+    background:linear-gradient( rgba(255, 255, 80, 0.09) 3px,transparent 3px,transparent 9px);
+    background-size: 100% 9px;
+    position: absolute;
+    z-index: 3;
+    animation: overlay-pan 20s infinite linear;
+}
+.card-overlay2{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,transparent,#0b0b0b);
+    position: absolute;
+    z-index: 3; 
+}
+@keyframes overlay-pan{
+    0%{
+      background-position: 0% 0% ;   
+    }
+    100%{
+       background-position: 0% -100%;
+    }
+}
+
+.event-orgname-number {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    bottom: 40px;
+    background-color: transparent;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.event-name {
+    font-family: 'Orbitron';
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: white;
+    transition: all .7s;
+}
+
+.about-event div h4,
+.about-event h2,
+.event-name {
+    text-transform: capitalize;
+}
+
+.about-event p {
+    text-align: justify;
+    width: 70%;
+}
+.about-event div ol li {
+    text-align: justify;
+    width: 70%;
+}
+
+#justify-this li {
+    width: 100%;
+}
+
+.about-event div h4 {
+    margin: .5rem 0;
+}
+
+.about-event .organizer-number {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    opacity: 100%;
+}
+
+.call-icon-para {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    width: 100%;
+}
+
+.call-icon-para img {
+    border: 1.5px solid var(--accent-color);
+    background-color: black;
+    padding: .5rem;
+    border-radius: 50%;
+}
+
+.call-icon-para div p {
+    font-size: 1rem;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1300px) {
+    .about-event h2 {
+        font-size: 4rem;
+    }
+    .about-event p {
+        font-size: .9rem;
+    }
+    .about-event div h3 {
+        font-size: 1.3rem;
+    }
+    .about-event div ol li {
+        font-size: .9rem;
+    }
+    .about-event a {
+        font-size: 1.2rem;
+    }
+    .card-image {
+        width: 22rem;
+    }
+}
+@media only screen and (max-width: 1300px) {
+    .about-event h2 {
+        font-size: 4rem;
+    }
+    .about-event p {
+        font-size: .9rem;
+        width: 80%;
+    }
+    .about-event div h3 {
+        font-size: 1.3rem;
+    }
+    .about-event div ol li {
+        font-size: .9rem;
+    }
+    .about-event a {
+        font-size: 1.2rem;
+    }
+    .card-image {
+        width: 22rem;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .about-event h2 {
+        font-size: 3.8rem;
+    }
+    .about-event p {
+        font-size: .9rem;
+        width: 80%;
+    }
+    .about-event div h3 {
+        font-size: 1.2rem;
+    }
+    .about-event div ol li {
+        font-size: .85rem;
+    }
+    .about-event a {
+        font-size: 1.1rem;
+    }
+    .card-image {
+        width: 22rem;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    .about-event h2 {
+        font-size: 3.6rem;
+    }
+    .about-event p {
+        font-size: .85rem;
+        width: 75%;
+    }
+    .about-event div h3 {
+        font-size: 1.1rem;
+    }
+    .about-event div ol li {
+        font-size: .8rem;
+    }
+    .about-event a {
+        font-size: 1.1rem;
+    }
+    .card-image {
+        width: 21rem;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .about-event h2 {
+        font-size: 3.2rem;
+    }
+    .about-event p {
+        font-size: .85rem;
+        width: 80%;
+    }
+    .about-event div h3 {
+        font-size: 1rem;
+    }
+    .about-event div ol li {
+        font-size: .75rem;
+    }
+    .about-event a {
+        font-size: 1rem;
+    }
+    .card-image {
+        width: 20rem;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .about-event h2 {
+        font-size: 3rem;
+    }
+    .about-event p {
+        font-size: .8rem;
+        width: 75%;
+    }
+    .about-event div h3 {
+        font-size: .9rem;
+    }
+    .about-event div ol li {
+        font-size: .75rem;
+    }
+    .about-event a {
+        font-size: 1rem;
+    }
+    .card-image {
+        width: 18rem;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .events {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 90%;
+        
+    }
+    .about-event h2 {
+        font-size: 2rem;
+    }
+    .about-event p {
+        font-size: .75rem;
+        width: 80%;
+    }
+    .about-event div h3 {
+        font-size: .8rem;
+    }
+    .about-event div ol li {
+        font-size: .7rem;
+        width: 80%;
+    }
+    .about-event a {
+        font-size: 1rem;
+    }
+    .card-image {
+        width: 17rem;
+    }
+    .event-name {
+        font-size: 1.6rem;
+    }
+    .home-title {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .about-event h2 {
+        font-size: 1.9rem;
+    }
+    .about-event p {
+        font-size: .75rem;
+        width: 80%;
+    }
+    .about-event div h3 {
+        font-size: .8rem;
+    }
+    .about-event div ol li {
+        width: 80%;
+        font-size: .7rem;
+    }
+    .about-event a {
+        font-size: 1rem;
+    }
+    .card-image {
+        width: 15rem;
+    }
+    .event-name {
+        font-size: 1.4rem;
+    }
+    .home-title {
+        font-size: 2.9rem;
+        margin-bottom: 2rem;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .events {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 80%;
+        height: 90%;
+        
+    }
+    .about-event div h2 {
+        margin: 3rem 0;
+        font-size: 1.3rem;
+    }
+    .about-event p {
+        font-size: .8rem;
+        width: 90%;
+    }
+    .about-event div h3 {
+        font-size: 1rem;
+    }
+    .about-event div ol li {
+        width: 80%;
+        margin: 0 auto;
+        font-size: .8rem;
+    }
+    .about-event a {
+        font-size: 1.2rem;
+    }
+    .event-name {
+        font-size: 1.4rem;
+    }
+    .home-title {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    .test-justify ol li{
+        width: 80%;
+    }
+    .about-event a {
+        margin: 0 auto;
+        text-align: center;
+    }
+    #justify-this li {
+        width: 80%;
+    }
+    .about-event div h3 {
+        margin: .5rem 0;
+    }
+    .about-event .organizer-number {
+        font-size: 1rem;
+    }
+    .call-icon-para {
+        justify-content: center;
+        gap: 1rem;
+    }
+}

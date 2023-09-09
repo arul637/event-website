@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  height: 130vh;
+  margin: 5rem auto;
+  margin-bottom: 5rem;
+  /* border: 1px solid red; */
+}
+
+.card {
+  background-color: #0b0b0b;
+  width: 18rem;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: .7rem;
+  padding: 2rem;
+  transition: all .7s;
+  margin: 2rem auto;
+  border: 1px solid var(--accent-color);
+}
+
+.card img {
+  width: 10rem;
+  border-radius: 50%;
+  cursor: none;
+  pointer-events: none;
+  transition: all .7s;
+}
+
+.card img:hover, .card:hover {
+  box-shadow: 0 0 5px .3px var(--accent-color);
+}
+
+.role {
+  font-size: 1rem;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  color: var(--accent-color);
+}
+
+.card a {
+  color: black;
+  display: block;
+  background-color: var(--accent-color);
+  padding: .3rem;
+  width: 90%;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 20rem;
+  transition: all .3s;
+}
+
+.card a:hover {
+  color: var(--accent-color);
+  background-color: #0b0b0b;
+  border: 1px solid var(--accent-color);
+}
+
+.role, .mailid {
+  font-size: 1rem;
+  opacity: 70%;
+}
+
+@media only screen and (max-width: 800px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+}

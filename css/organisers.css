@@ -1,0 +1,105 @@
+h1 {
+    text-align: center;
+    /* color: var(--accent-color); */
+    font-family: var(--rubik-font);
+    font-size: 2.5rem;
+    transition: all .7s;
+    margin-top: 10rem;
+}
+
+#first h1 {
+    margin-top: 10vh;
+    /* color: var(--accent-color); */
+}
+
+.line {
+    border: 2px solid var(--blue-color);
+    width: 90%;
+    margin: 1rem auto;
+    transition: all .7s;
+}
+
+.card {
+    width: 18rem;
+    height: 23rem;
+    background-color: #0b0b0b;
+    border-radius: .7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 2rem; */
+    transition: all 0.7s;
+    border: 1px solid var(--accent-color);
+}
+
+.name-dept {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.8s;
+    color: var(--red-color);
+}
+
+.card-session {
+    width: 90%;
+    margin: 5rem auto;
+    display: flex;
+    flex-flow: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.card img {
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: var(--shadow);
+}
+
+.card .role,
+.card .name {
+    font-family: var(--rubik-font);
+    font-size: 1.5rem;
+}
+
+.name{
+    color: var(--accent-color);
+}
+
+.card:hover {
+    box-shadow: 0 0 10px 1px var(--accent-color);
+}
+
+.department {
+    font-family: var(--rubik-font);
+    opacity: 60%;
+    margin: 0;
+}
+
+
+.event-name-dept {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.event-name-dept h2 {
+    font-size: 2rem;
+    font-family: var(--rubik-font);
+}
+
+.event-name-dept h3 {
+    font-family: var(--rubik-font);
+    color: var(--blue-color);
+}
+
+@media only screen and (max-width: 600px) {
+    footer {
+        flex-direction: column;
+        gap: 5rem;
+    }
+}
