@@ -26,6 +26,15 @@
 
 }
 
+#main-logo {
+    position: absolute;
+    top: 10%;
+    width: 15rem;
+    border-radius: 50%;
+    opacity: 70%;
+    transition: all .7s;
+}
+
 #blob{
     position: absolute;
     width: 78px;
@@ -459,6 +468,9 @@
     #index-desc-another {
         font-size: .9rem;
     }
+    #main-logo {
+        top: 10%;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -556,6 +568,10 @@
         font-size: .7rem;
         margin: .5rem 0;
     }
+    #main-logo {
+        top: 8%;
+        width: 13rem;
+    }
 }
 @media screen and (max-width: 600px) {
     .technical-event div img {
@@ -582,6 +598,10 @@
     .map div a img {
         width: 20rem;
     }
+    #main-logo {
+        top: 15%;
+        width: 13rem;
+    }
 }
 @media screen and (max-width: 400px) {
     #zyverse-logo {
@@ -603,5 +623,9 @@
     }
     #index-desc-another {
         font-size: .8rem;
+    }
+    #main-logo {
+        top: 15%;
+        width: 10rem;
     }
 }
