@@ -13,326 +13,76 @@
     display: none;
 }
 
-.img-logo{
-
-    position: absolute;
-    top: 5%;
-    width: 20rem;
-    border-radius: 50%;
-    filter: sepia(50%);
-    filter:  grayscale(30%) ;
-    /* height: 20rem; */
-    opacity: 70%;
-
-}
-
-#main-logo {
-    position: absolute;
-    top: 10%;
-    width: 15rem;
-    border-radius: 50%;
-    opacity: 70%;
-    transition: all .7s;
-}
-
-#blob{
-    position: absolute;
-    width: 78px;
-    filter: blur(30px);
-}
-
-.main{
-    height: 90vh;
-    width: 100%;
-}
-
-.main .bg-video {
+.desktop-bg-video {
     position: absolute;
     width: 100%;
     height: 100vh;
 }
 
-.main div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 5rem;
-    bottom: 5rem;
-    left: 5rem;
-    right: 5rem;
+.mobile-bg-video {
+    display: none;
 }
 
-.main h1{
-    font-family: 'Orbitron';
-    font-weight: 300;
-    font-size: 6em;
-    position: absolute;
-    cursor: none;
-    transition: all 0.7s ease-in-out;
-    color: var(--txt-color);
-    padding: 1rem;
-}
-
-.main h1:hover{
-
-    color: var(--txt-color);
-    padding: 1rem;
-
-}
-
-#index-desc-another {
-    font-size: 1.5rem;
-}
-
-.index-desc{
-    position: relative;
-    top: 8rem;
-    font-size: 2rem;
-    opacity: 60%;
-    margin: 2rem 0;
-    font-family: 'Roboto';
-    text-transform: capitalize;
-    transition: all .7s;
-    
-}
-/* section 1 over */
-
-
-
-/* clock section */
-.details{
-    width: 100%;
-    height: 95vh;
-    position: relative;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-
-
-   
-.diff{
-    color: var(--accent-color);
-    margin-left: 20px;
-
-}
-
-.left{
-    width: 25%;
-    height: 100%;
-    font-size: 3em;
-    position: relative;
-    font-family: 'Handjet';
-}
-
-.left::before{
-
-    content: '';
-    height: 40%;
-    top: 10%;
-    right: 103%;
-    width: 5px;
-    border-radius: 2px;
-    transform: rotate(-10deg);
-    background-color: #FFF;
-    position: absolute;
-    display: block;
-
-}
-
-.right{
-
-    height: 100%;
-    width: 45%;
-    /* border: 1px solid red; */
-    font-size: 1.2em;
-    display: flex;
-    align-items: center;
-    font-family: 'Orbitron';
-
-
-
-}
-
-.clock-container {
+.above-video {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 3em;
-    height: 100%;
-    position: relative;
-  }
-  
-
-.clock-container::before{
-    content: '';
-    width: 90%;
-    background-color: var(--accent-color);
-    height: 1px;
-    box-shadow: 5px 2px 4px 2px var(--accent-color);
-  }
-
-.clock-container::after{
-    content: '';
-    width: 90%;
-    background-color: var(--accent-color);
-    height: 1px;
-    box-shadow: 5px 2px 4px 2px var(--accent-color);
-  }
-  
-  .clock-container h1 {
-    font-weight: 500;
-    color: #fff;
-    text-align: center;
-
-  }
-  
-  #countdown {
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2em;
-    background: rgba(0, 0, 0, 0.78);
-    -webkit-backdrop-filter: blur(3px);
-    backdrop-filter: blur(3px);
-    border: 1px solid var(--accent-color);
-    border-radius: 1.5em;
-  }
-
-  .text{
-
-    font-family: 'Orbitron';
-    font-size:3rem;
-    letter-spacing: 5px;
-
-
-  }
-  
-  #countdown .circle {
-    position: relative;
-    width: 250px;
-    height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 50px;
-    left: 20px;
-  }
-  
-  #countdown .circle svg {
-    position: relative;
-    width: 250px;
-    height:250px;
-    /* top: 10px; */
-    /* transform: rotate(270deg); */
-    /* transform: translateY(10px); */
-    transform: translateX(10px);
-  }
-  
-  #countdown .circle svg circle {
-    width: 100%;
-    height: 100%;
-    fill: transparent;
-    stroke-width: 8;
-    stroke: #444444;
-    stroke-linecap: round;
-    transform: translate(5px, 5px);
-  }
-  
-  #countdown .circle svg circle:nth-child(2) {
-    stroke: var(--clr);
-    stroke-dasharray: 440;
-    stroke-dashoffset: 440;
-  }
-  
-  #countdown div {
-    position: absolute;
-    text-align: center;
-    font-weight: 500;
-    color: #fff;
-    font-size: 1.5em;
-    line-height: 0.5em;
-    top: 70px;
-    left: 80px;
-  }
-  
-  #countdown div span {
-    font-size: 0.35em;
-    font-weight: 300;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-  }
-  
-
-.home-card {
-    width: 20rem;
-    height: 30rem;
-    border-radius: 2rem;
-    background-color: #FFF;
-    position: relative;
-    overflow: hidden;
-}
-
-.home-title{
-
-    font-size: 3rem;
-    font-family: 'Orbitron';
-    text-align: center;
-    color: var(--accent-color);
-    transition: all 0.7s;
-
-}
-
-.home-card a img {
-    width: 20rem;
-    border-radius: inherit;
-}
-
-.home-card a {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
-}
-
-.home-card h3 {
-    color: #fff;
-    position: absolute;
-    bottom: 0;
-}
-
-
-/* technical event and non technical event */
-.technical-event, .non-technical-event {
-    display: flex;
     gap: 2rem;
-    width: 95%;
-    height: 90vh;
-    align-items: center;
-    margin: 3rem auto;
-} 
-
-.technical-event div img, 
-.non-technical-event div img {
-    width: 30rem;
-    transition: all .7s;
+    position: relative;
+    color: var(--txt-color);    
+    transition: all 0.5s;
+    height: 80vh;
 }
 
-.technical-event div p,
-.non-technical-event div p {
-    font-size: 2rem;
+.above-video img {
+    width: 15rem;
+    border-radius: 50%;
+    opacity: 85%;
+    transition: all 0.5s;
+}
+
+.above-video h1 {
+    font-size: 4.5rem;
+    font-family: 'Orbitron';
+    transition: all 0.5s;
+    font-weight: 300;
+}
+
+.above-video div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.above-video div:nth-child(3) h3 {
+    font-size: 1.8rem;
     font-family: 'Roboto';
-    opacity: 80%;
-    transition: all .8s;
+    transition: all 0.5s;
+    text-transform: capitalize;
+}
+
+.above-video div:nth-child(3) p {
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    color: var(--accent-color);
+    transition: all 0.5s;
+    text-transform: capitalize;
+}
+
+.technical-event {
+    display: flex;
+    color: white;
+    width: 80%;
+    gap: 3rem;
+    margin: 5rem auto;
+}
+
+.technical-event img {
+    transition: all 0.5s;
+    width: 30rem;
 }
 
 .event-discription {
@@ -341,220 +91,146 @@
     justify-content: space-between;
 }
 
-.event-discription a {
+.event-discription p {
     font-size: 1.5rem;
-    border-radius: .3rem;
-    color: black;
-    width: fit-content;
-    padding: .5rem;
+    text-align: justify;
+    width: 90%;
+    font-family: 'Rubik';
+    opacity: 70%;
+    transition: all 0.5s;
+}
+
+.event-discription a {
     background-color: var(--accent-color);
-    transition: all .4s;
+    color: black;
+    width: 6rem;
+    text-align: center;
+    font-family: 'Rubik';
+    border-radius: 0.3rem;
+    transition: all 0.5s;
+    padding: 0.5rem 0.9rem;
 }
 
 .event-discription a:hover {
     color: var(--accent-color);
     background-color: black;
     border: 1px solid var(--accent-color);
-    border-radius: .3rem;
 }
 
-#technical-event {
-    flex-direction: row-reverse;
-}
-
-/* location bar */
-.map{
+.map {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    width: 95%;
-    margin: 1rem auto;
-    height: 100vh;
-}
-
-.bg-video-mobile {
-    display: none;
+    align-items: center;
 }
 
 .map div a img {
-    width: 70rem;
-    border-radius: .5rem;
-    transition: all .7s;
-    border: 2.5px solid var(--accent-color);
+    width: 50rem;
     border-radius: 1rem;
-}
-
-.technical-event div img {
     border: 1px solid var(--accent-color);
-    border-radius: 1rem;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 1px var(--accent-color);
 }
 
-.event-discription p {
-    text-align: justify;
-}
-
-@media screen and (max-width: 1200px) {
-    #zyverse-logo {
-        font-size: 5em;
+@media only screen and (max-width: 1200px) {
+    .above-video img {
+        width: 13rem;
     }
-    .home-title {
-        font-size: 2.8rem;
+    .above-video h1 {
+        font-size: 4.3rem;
     }
-    .technical-event div p,
-    .non-technical-event div p {
-        font-size: 1.8rem;
-    }
-    .map div a img {
-        width: 65rem;
-    }
-}
-
-@media screen and (max-width: 1150px) {
-    .technical-event div p,
-    .non-technical-event div p {
-        font-size: 1.6rem;
-    }
-    .map div a img {
-        width: 60rem;
-    }
-    #index-desc-another {
-        font-size: 1.3rem;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    #zyverse-logo {
-        font-size: 4.8em;
-    }
-    .home-title {
-        font-size: 2.6rem;
-    }
-    .technical-event div p,
-    .non-technical-event div p {
+    .above-video div:nth-child(3) h3 {
         font-size: 1.5rem;
     }
-    .technical-event div img {
+    .above-video div:nth-child(3) p {
+        font-size: 1.3rem;
+    }
+    .event-discription p{
+        font-size: 1.3rem;
+    }
+    .technical-event img {
         width: 28rem;
-    }
+    }    
     .map div a img {
-        width: 58rem;
-    }
-    #index-desc-another {
-        font-size: 1.1rem;
+        width: 45rem;
     }
 }
-
-@media screen and (max-width: 900px) {
-    #zyverse-logo {
-        font-size: 4.5em;
+@media only screen and (max-width: 1000px) {
+    .above-video img {
+        width: 11.5rem;
     }
-    .index-desc {
-        font-size: 1.7rem;
+    .above-video h1 {
+        font-size: 4rem;
     }
-    .home-title {
-        font-size: 2.4rem;
-    }
-    .technical-event div p,
-    .non-technical-event div p {
-        font-size: 1.4rem;
-    }
-    .technical-event div img {
-        width: 24rem;
-    }
-    .map div a img {
-        width: 54rem;
-    }
-    #index-desc-another {
-        font-size: .9rem;
-    }
-    #main-logo {
-        top: 10%;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    #zyverse-logo {
-        font-size: 4.2em;
-    }
-    .index-desc {
-        font-size: 1.4rem;
-    }
-    .home-title {
-        font-size: 2.3rem;
-    }
-    .technical-event div p,
-    .non-technical-event div p {
+    .above-video div:nth-child(3) h3 {
         font-size: 1.2rem;
     }
-    .technical-event div img {
-        width: 22rem;
-    }
-    .map div a img {
-        width: 50rem;
-    }
-    #index-desc-another {
-        font-size: .9rem;
-    }
-}
-
-@media screen and (max-width: 780px) {
-    #zyverse-logo {
-        font-size: 4em;
-    }
-    .index-desc {
-        font-size: 1.2rem;
-    }
-    .home-title {
-        font-size: 2.2rem;
-    }
-    .technical-event div p,
-    .non-technical-event div p {
+    .above-video div:nth-child(3) p {
         font-size: 1rem;
     }
-    .technical-event div img {
-        width: 18rem;
+    .event-discription p{
+        font-size: 1.2rem;
+    }
+    .technical-event img {
+        width: 26.5rem;
     }
     .map div a img {
         width: 40rem;
     }
-    #index-desc-another {
-        font-size: .75rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .map div a img {
+        width: 38rem;
     }
 }
 
-@media screen and (max-width: 700px) {
-    #zyverse-logo {
-        font-size: 3em;
+@media only screen and (max-width: 800px) {
+    .above-video img {
+        width: 10rem;
     }
-    .bg-video {
+    .above-video h1 {
+        font-size: 3.5rem;
+    }
+    .above-video div:nth-child(3) h3 {
+        font-size: 1rem;
+    }
+    .above-video div:nth-child(3) p {
+        font-size: 0.85rem;
+    }
+    .desktop-bg-video  {
         display: none;
     }
-    .index-desc {
+    .mobile-bg-video {
+        display: block;
+        opacity: 80%;
+    }
+    .event-discription p{
         font-size: 1rem;
-        top: 4rem;
     }
-    .home-title {
-        font-size: 2rem;
-    }
-    .technical-event, 
-    #technical-event {
-        width: 90%;
-        margin: 1rem auto;
-        flex-direction: column;
-    }
-    .technical-event div img {
+    .technical-event img {
         width: 25rem;
+    }
+    .technical-event {
+        flex-direction: column;
+    }    
+    .map div a img {
+        width: 35rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .event-discription p{
+        font-size: 1.2rem;
+    }
+    .technical-event img {
+        width: 25rem;
+    }
+    .event-discription a {
+        margin-top: 2rem;
     }
     .map div a img {
-        width: 25rem;
-    }
-    .bg-video-mobile {
-        display: block;
-        opacity: 45%;
-    }
-    .details {
-        margin-top: 20rem;
+        width: 30rem;
     }
     #preloader-video-mobile {
         display: block;
@@ -564,68 +240,37 @@
     #preloader-video {
         display: none;
     }
-    #index-desc-another {
-        font-size: .7rem;
-        margin: .5rem 0;
-    }
-    #main-logo {
-        top: 8%;
-        width: 13rem;
-    }
 }
-@media screen and (max-width: 600px) {
-    .technical-event div img {
+
+@media only screen and (max-width: 500px) {
+    .map div a img {
+        width: 28rem;
+    }
+    .technical-event img {
         width: 23rem;
     }
-    .map div a img {
-        width: 23rem;
+    .home-bold-title {
+        font-size: 2rem;
     }
 }
-@media screen and (max-width: 500px) {
-    #zyverse-logo {
-        font-size: 3em;
-    }
-    .index-desc {
-        font-size: .8rem;
-        top: 3.8rem;
-    }
-    .home-title {
-        font-size: 1.6rem;
-    }
-    .technical-event div img {
-        width: 20rem;
-    }
+
+@media only screen and (max-width: 450px) {
     .map div a img {
-        width: 20rem;
+        width: 25rem;
     }
-    #main-logo {
-        top: 15%;
-        width: 13rem;
+    .technical-event img {
+        width: 20rem;
     }
 }
-@media screen and (max-width: 400px) {
-    #zyverse-logo {
-        font-size: 2.7em;
-    }
-    .index-desc {
-        font-size: 1rem;
-        top: 3.6rem;
-        text-align: center;
-    }
-    .home-title {
-        font-size: 1.6rem;
-    }
-    .technical-event div img {
-        width: 20rem;
-    }
+
+@media only screen and (max-width: 400px) {
     .map div a img {
-        width: 20rem;
+        width: 18rem;
     }
-    #index-desc-another {
-        font-size: .8rem;
+    .technical-event img {
+        width: 18rem;
     }
-    #main-logo {
-        top: 15%;
-        width: 10rem;
+    .home-bold-title {
+        font-size: 1.5rem;
     }
 }

@@ -3,54 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/root.css">
-    <!-- <link rel="stylesheet" href="organisers.css"> -->
+    <style>
+      .card a {
+        background-color: var(--accent-color);
+        color: black;
+        font-size: 1.3rem;
+        font-family: 'Rubik';
+        padding: 0.2rem 7rem;
+        border-radius: 3rem;
+        transition: all 0.5s;
+      }
+      .card a:hover {
+        color: var(--accent-color);
+        background-color: black;
+        border: 1px solid var(--accent-color);
+      }
+      .card .role {
+        font-size: 1.2rem;
+      }
+    </style>
+    <title>Contact</title>
 </head>
 <body>
-  <header>
-    <nav>
-      <h2 id="logo-image">LOGO</h2>
-      <div class="mob-view" id="mob-view">
-        <div class="mob-view-line"></div>
-        <div class="mob-view-line"></div>
-        <div class="mob-view-line"></div>
-      </div>
-      <div class="links" id="mob-view-links">
-        <a href="index.html" class="link">Home</a>
-        <a href="events.html" class="link">Event</a>
-        <a href="organisers.html" class="link">The Team</a>
-        <a href="contact.html" class="link">Contact</a>
-        <a href="about.html" class="link">About</a>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScZqVbohXQiauQjQqwCNecqOA4x7QybaPQiVwsNivuCg4_00Q/viewform" target="_blank" class="link">Register</a>
-      </div>
-    </nav>
-  </header>
-    <!-- <div class="container">
-        <div class="row">
-          <div class="card" style="--bc: #00ff73;--btn: #1b5a37;">
-            <img src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX37232442.jpg" alt="*">
-            <h2>Blessin</h2>
-            <p class="role">President</p>
-            <p>blessin@gmail.com</p>
-            <a href="tel:+880123456789">Call</a>
-          </div>
-          <div class="card" style="--bc: #ff857c;--btn: #5f3a38;">
-            <img src="https://static.vecteezy.com/system/resources/thumbnails/001/541/050/small/boy-cartoon-face-free-vector.jpg" alt="*">
-            <h2>Santhosh</h2>
-            <p class="role"><bold>Vice President</bold></p>
-            <p>santhosh@gmail.com</p>
-            <a href="tel:+880123456789">Call</a>
-          </div>
-          
-        </div>
-      </div> -->
+    
+      <header>
+          <nav>
+              <ul class="mobile-navigation" id="mobile-navigation">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+              </ul>
+              <ul class="desktop-navigation" id="desktop-navigation">
+                  <li><a href="index.html" class="link">Home</a></li>
+                  <li><a href="events.html" class="link">Event</a></li>
+                  <li><a href="organisers.html" class="link">The Team</a></li>
+                  <li><a href="contact.html" class="link">Contact</a></li>
+                  <li><a href="about.html" class="link">About</a></li>
+                  <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScZqVbohXQiauQjQqwCNecqOA4x7QybaPQiVwsNivuCg4_00Q/viewform" class="link">Register</a></li>
+              </ul>
+          </nav>
+      </header>
 
-      <section class="content">
+      <h1 class="home-bold-title">Student Coordinators</h1>
+      <section class="card-section">
         <div class="card">
-          <img src="images/blessin.webp" alt="blessin img" style="width: 9rem; height: 9rem;"/>
+          <img src="images/jaffy.webp" alt="blessin img"/>
           <h2>Blesslin Jaffy R</h2>
             <p class="role">( President )</p>
             <p class="mailid">blesslinjaffy@gmail.com</p>
@@ -59,8 +58,7 @@
         <div class="card">
             <img
             src="images/santhosh.webp"
-            alt="neuralnine image"
-            style="width: 9rem"/>
+            alt="neuralnine image"/>
             <h2>Santhosh Kumar M</h2>
             <p class="role">( Vice President )</p>
             <p class="mailid">santhoshkumarcyber@gmail.com</p>
@@ -68,38 +66,69 @@
         </div>
       </section>
 
-      <div class="line-seperation"></div>
+      <div class="gray-line"></div>
+
+      <h1 class="home-bold-title">Staff Coordinators</h1>
+      <section class="card-section">
+        <div class="card">
+          <img src="images/giridharan.webp" alt="blessin img" style="object-position: top;" />
+          <h2>Mr. S. Giridharan</h2>
+            <p class="role">Assistant Professor</p>
+            <p class="mailid">(Cyber Security)</p>
+        </div>
+        <div class="card">
+        <img src="images/rajkumar.webp" alt="blessin img" style="object-position: top;" />
+        <h2>Mr. E. Rajkumar</h2>
+          <p class="role">Assistant Professor</p>
+          <p class="mailid">(Cyber Security)</p>
+      </div>
+      </section>
+
+      <div class="gray-line"></div>
+
+      <h1 class="home-bold-title">Convener</h1>
+      <section class="card-section">
+        <div class="card">
+          <img src="images/senthilkumar.webp" alt="blessin img"/>
+          <h2>Dr. M. Senthil kumar</h2>
+            <p class="role">Head Of Department</p>
+            <p class="mailid">(Cyber Security)</p>
+        </div>
+      </section>
+
+      <div class="color-line"></div>
       <footer>
         <div class="meida-links">
           <a href="https://instagram.com/whitehatians?igshid=OGU0MmVlOWVjOQ=="
-          ><img src="images/instagram.webp" alt="" style="width: 2.5rem" class="footer-icons-start"
+          target="_blank"><img src="images/instagram.webp" alt="" style="width: 2.5rem" class="footer-icons-start"
           /></a>
           <a href="https://facebook.com/whitehatians"
-            ><img src="images/facebook.webp" alt="" style="width: 2.5rem" class="footer-icons"
+          target="_blank"><img src="images/facebook.webp" alt="" style="width: 2.5rem" class="footer-icons"
           /></a>
           <a href="https://linkedin.com/company/whitehatians"
-            ><img src="images/linkedin.webp" alt="" style="width: 2.5rem" class="footer-icons"
+          target="_blank"><img src="images/linkedin.webp" alt="" style="width: 2.5rem" class="footer-icons"
           /></a>
-          <a href="https://discord.gg/QKjrhegdx5"><img src="images/discord.webp" alt="" style="width: 2.5rem" class="footer-icons"/></a>
+          <a href="https://discord.gg/QKjrhegdx5" target="_blank"><img src="images/discord.webp" alt="" style="width: 2.5rem" class="footer-icons"/></a>
+          <a href="https://youtube.com/@whitehatians" target="_blank"><img src="images/youtube.png" alt="" style="width: 2.5rem" class="footer-icons"/></a>
         </div>
         <p id="copyright">&copy; All Rights Reserved</p>
-    </footer>
+      </footer>
 
-    <script>
-      let mobileviewline = document.getElementById("mob-view");
-      mobileviewline.ontouchstart = function () {
-        let navbar = document.querySelector(".links");
-        navbar.classList.toggle("active");
-      }
-    </script>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BZ6PX8NFN0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+      <script>
+        let navigation = document.getElementById("mobile-navigation");
+        navigation.onclick = function () {
+          let navbar = document.getElementById("desktop-navigation");
+          navbar.classList.toggle("active");
+        }
+      </script>
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZXMLNCDL3Y"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-ZXMLNCDL3Y');
+      </script>
 
-  gtag('config', 'G-BZ6PX8NFN0');
-</script>
 </body>
 </html>

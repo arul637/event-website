@@ -1,100 +1,149 @@
 @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300&family=Iceland&family=Orbitron:wght@400;700&family=Roboto&family=Rubik&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Zen+Dots&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+}
 
 :root{
     --bg-color: #000;
     --accent-color:#8dffb3;
+    /* --accent-color: skyblue; */
+    /* --accent-color: rgb(255, 10, 100); */
     --txt-color:#FFF;
     --zen-font: 'Zen Dots', cursive;
-    /* line-height: 1.3rem; */
+    --pt-sans: 'PT Sans', sans-serif;
     -webkit-tap-highlight-color: transparent;
 }
 
-a{
+a {
     text-decoration: none;
-
-
 }
 
-header nav {
-    width: 95%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 2rem;
+header nav ul li {
+    list-style-type: none;
+    transition: all 0.2s;
 }
 
-header nav .links {
-    display: flex;
-    /* gap: 1rem; */
-    gap: 1rem;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.link{
-    /* width: 100%; */
-    color: var(--txt-color);
-    opacity: 60%;
-    padding: 1em;
-    font-family: 'Rubik';
-    transition: all 350ms ease;
-    font-size: 1.25em;
-    transition: all 0.7s;
-
-}
-
-#logo-image {
-    font-size: 1.25em;
-    transition: all 0.7s;
-    color: var(--txt-color);
-    padding: 1em;
-    font-family: 'Rubik';
-}
-
-.link:hover{
-    
-    color:var(--accent-color);
-    opacity: 1;
-    transform: translateY(10px);
-    
-}
-
-body{
-
-    background-color: var(--bg-color);
-    color: var(--txt-color);
-    font-family: 'Rubik';
-}
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    align-items: center;
-    margin: 5rem auto;
-    color: var(--red-color);
-    margin-bottom: 0;
+header {
+    background-color: black;
+    padding: 3rem;
+    width: auto;
     position: relative;
-
 }
 
-#copyright {
-    color: whitesmoke;
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
 }
 
-.line-seperation {
+header nav ul li a {
+    font-size: 1.5rem;
+    color: var(--txt-color);
+    font-family: 'Rubik';
+    transition: all 0.5s;
+}
+
+header nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+header nav ul li:hover {
+    transform: translateY(5px);
+}
+
+.card-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.card {
+    width: 18rem;
+    height: 23rem;
+    background-color: #0b0b0b;
+    border-radius: .7rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.7s;
+    border: 2px solid var(--accent-color);
+    transition: all 0.5s;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px 1px var(--accent-color);
+}
+
+.card img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--accent-color);
+}
+
+.card .role,
+.card .name,
+.card .department {
+    font-family: var();
+    font-size: 1.5rem;
+    color: var(--txt-color);
+    font-family: var(--pt-sans);
+    text-align: center;
+}
+
+.card .name {
+    color: var(--accent-color);
+}
+
+.card .department {
+    opacity: 80%;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.card h2, .card .mailid {
+    color: var(--txt-color);
+    font-family: 'Rubik';
+}
+
+.home-bold-title {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 2.5rem;
+    color: var(--txt-color);
+    font-family: 'Rubik';
+    text-transform: uppercase;
+}
+
+.gray-line {
+    margin: 5rem auto;
+    width: 80%;
+    border: 1px solid white;
+    opacity: 80%;
+}
+
+.color-line {
+    width: 80%;
+    margin: 5rem auto;
     border: 1px solid var(--accent-color);
-    width: 90%;
-    margin: 3rem auto;
-}
-
-.line-seperation-normal {
-    border: 1px solid #404040;
-    box-shadow: 0 0 1.5px .5px #404040;
-    width: 90%;
-    margin: 3rem auto;
+    box-shadow: 0 0 1px 0.5px var(--accent-color);
 }
 
 footer {
@@ -122,68 +171,85 @@ footer .meida-links {
     border-radius: 50%;
 }
 
-@media only screen and (max-width: 800px) {
-    header nav .links {
-        font-size: 0.85rem;
-    }
+#copyright {
+    color: whitesmoke;
+    font-family: 'Rubik';
+    font-size: 1.2rem;
 }
 
-@media only screen and (max-width: 780px) {
-    .header nav .links {
-        font-size: 0.8rem;
+@media only screen and (max-width: 800px) {
+    header nav ul li a {
+        font-size: 1.3rem;
     }
 }
 
 @media only screen and (max-width: 700px) {
-    header nav .links {
-        font-size: 0.75rem;
+    header nav ul li a {
+        font-size: 1rem;
+    }
+    .home-bold-title {
+        font-size: 1.3rem;
+    }
+    .card {
+        width: 16rem;
+    }
+    .card h2 {
+        font-size: 1rem;
+    }
+    .card-section div a {
+        padding: 0.2rem 5rem;
+        font-size: 1rem;
+    }
+    .role, .mailid {
+        font-size: 0.7em;
+    }
+    footer {
+        gap: 0.8rem;
+        width: 80%;
+    }
+    .gray-line, .color-line {
+        width: 70%;
     }
 }
 
-@media only screen and (max-width: 650px) {
-    header nav .links {
-        font-size: 0.7rem;
+@media only screen and (max-width: 600px) {
+    header nav ul li a {
+        font-size: 0.8rem;
     }
 }
-@media only screen and (max-width: 600px) {
-    .mob-view {
-        display: block;
-    } 
-    .mob-view .mob-view-line {
+
+@media only screen and (max-width: 550px) {
+    header nav ul li a {
+        display: none;
+    }
+    .mobile-navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        gap: 0.5rem;
+    }
+    .mobile-navigation div {
         width: 30px;
         height: 2px;
         background-color: var(--accent-color);
-        margin: 5px 2rem;
     }
-    header nav .links {
-        position: absolute;
-        top: 80px;
-        height: 0;
-        overflow: hidden;
+    .active {
+        position: relative;
+        top: 1rem;
         left: 0;
         right: 0;
-        transition: .2s;
-        z-index: 100;
+        background-color: rgba(0, 0, 0, 0.95);
+        height: 450px;
+        width: 100%;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        justify-content: space-between;
+        margin: 0 auto;
     }
-    header nav .links .link {
-        opacity: 0;
-    }
-}
-
-@media only screen and (max-width: 590px) {
-    header nav .active {
-        height: 350px;
-        background-color: rgba(0, 0, 0, 0.95);
-    }
-    header nav .active .link {
-        overflow: visible;
-        opacity: 1;
-    }
-    .link {
-        font-size: 1rem;
+    .active a {
+        display: flex;
+        color: white;
     }
 }

@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zyverse</title>
-    <link rel="stylesheet" href="css/main.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/clock.css">
-  </head>
-  <body>
+    <style>
+        .home-bold-title {
+            margin-top: 15rem;
+            color: var(--accent-color);
+            font-size: 2.5rem;
+        }
+        .details {
+            margin-top: 10rem;
+            height: 70vh;
+        }
+        @media only screen and (max-width: 780px) {
+            .details {   
+                margin-top: 15rem;
+            }
+        }
+    </style>
+    <title>ZYVERSE</title>
+</head>
+<body>
     
     <!-- preloader -->
     <div id="preloader">
@@ -17,88 +33,90 @@
       </video>
       <video autoplay muted id="preloader-video-mobile" style="height: 100%; width: 100%;margin: 0 auto; position: absolute;">
         <source src="images/mobile-preloader.mp4" type="video/mp4">
-    </video>
+      </video>
     </div>
 
-    <!-- header -->
     <header>
       <nav>
-        <h2 id="logo-image">LOGO</h2>
-        <div class="mob-view" id="mob-view">
-          <div class="mob-view-line"></div>
-          <div class="mob-view-line"></div>
-          <div class="mob-view-line"></div>
-        </div>
-        <div class="links" id="mob-view-links">
-          <a href="index.html" class="link">Home</a>
-          <a href="events.html" class="link">Event</a>
-          <a href="organisers.html" class="link">The Team</a>
-          <a href="contact.html" class="link">Contact</a>
-          <a href="about.html" class="link">About</a>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLScZqVbohXQiauQjQqwCNecqOA4x7QybaPQiVwsNivuCg4_00Q/viewform" class="link">Register</a>
-        </div>
+          <ul class="mobile-navigation" id="mobile-navigation">
+              <div></div>
+              <div></div>
+              <div></div>
+          </ul>
+          <ul class="desktop-navigation" id="desktop-navigation">
+              <li><a href="index.html" class="link">Home</a></li>
+              <li><a href="events.html" class="link">Event</a></li>
+              <li><a href="organisers.html" class="link">The Team</a></li>
+              <li><a href="contact.html" class="link">Contact</a></li>
+              <li><a href="about.html" class="link">About</a></li>
+              <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScZqVbohXQiauQjQqwCNecqOA4x7QybaPQiVwsNivuCg4_00Q/viewform" class="link">Register</a></li>
+          </ul>
       </nav>
-    </header>
+  </header>
 
-    <!-- section-1 = main page, about zyverse -->
-    <section class="main">
-      <video class="bg-video" autoplay muted loop>
-        <source src="images/home-secion.mp4" type="video/mp4">
-      </video>
-      <video class="bg-video-mobile" autoplay muted loop style="width: 100%; height: 100vh; position: absolute;">
-        <source src="images/home-section-mobile.mp4" type="video/mp4">
-      </video>
-      <!-- <img src="images/logo.jpeg" class="img-logo" alt="" srcset=""> -->
-      <div>
-        <img src="images/logo1.png" id="main-logo" alt="main logo">
-        <h1 data-value="Zyverse" id="zyverse-logo">Zyverse</h1>
-        <p class="index-desc" style="font-family: var(--zen-font);">A national level technical Symposium </p>
-        <p class="index-desc" id="index-desc-another" style="margin-top: -2rem; font-family: var(--zen-font); color: var(--accent-color);">by the Department of Cybersecurity</p>
-      </div>
+    <!-- section 1 main -->
+    <section class="section-main">
+        <video class="desktop-bg-video" autoplay muted loop>
+            <source src="images/home-secion.mp4" type="video/mp4">
+        </video>
+        <video class="mobile-bg-video" autoplay muted loop style="width: 100%; height: 100vh; position: absolute;">
+            <source src="images/home-section-mobile.mp4" type="video/mp4">
+        </video>
+        <div class="above-video">
+            <div>
+                <img src="images/logo.webp" alt="logo" style="border: 5px solid var(--accent-color)">
+            </div>
+            <div>
+                <h1 data-value="Zyverse" >ZYVERSE</h1>
+            </div>
+            <div>
+                <h3>A national level technical Symposium</h3>
+                <p>by the Department of Cyber Security</p>
+            </div>
+        </div>
     </section>
 
     <!-- section-2 clock section -->
     <section class="details">
-      <div class="home-title" id="clock-title">The Symposium starts in</div>
-      <div id="time">
-        <div class="circle" style="--clr: #ff2972">
-          <div class="dots day_dot"></div>
-          <svg>
-            <circle cx="70" cy="70" r="70"></circle>
-            <circle cx="70" cy="70" r="70" id="dd"></circle>
-          </svg>
-          <div id="days">00<br /><span>Days</span></div>
-        </div>
-        <div class="circle" style="--clr: #fff">
-          <div class="dots hr_dot"></div>
-          <svg>
-            <circle cx="70" cy="70" r="70"></circle>
-            <circle cx="70" cy="70" r="70" id="hh"></circle>
-          </svg>
-          <div id="hours">00</div>
-        </div>
-        <div class="circle" style="--clr: #fee800">
-          <div class="dots min_dot"></div>
-          <svg>
-            <circle cx="70" cy="70" r="70"></circle>
-            <circle cx="70" cy="70" r="70" id="mm"></circle>
-          </svg>
-          <div id="minutes">00</div>
-        </div>
-        <div class="circle" style="--clr: #04fc43">
-          <div class="dots sec_dot"></div>
-          <svg>
-            <circle cx="70" cy="70" r="70"></circle>
-            <circle cx="70" cy="70" r="70" id="ss"></circle>
-          </svg>
-          <div id="seconds">00</div>
-        </div>
-      </div>
+            <h1 class="home-bold-title" >The Symposium starts in</h1>
+            <div id="time">
+            <div class="circle" style="--clr: #ff2972">
+                <div class="dots day_dot"></div>
+                <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="dd"></circle>
+                </svg>
+                <div id="days">00<br /><span>Days</span></div>
+            </div>
+            <div class="circle" style="--clr: #fff">
+                <div class="dots hr_dot"></div>
+                <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="hh"></circle>
+                </svg>
+                <div id="hours">00</div>
+            </div>
+            <div class="circle" style="--clr: #fee800">
+                <div class="dots min_dot"></div>
+                <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="mm"></circle>
+                </svg>
+                <div id="minutes">00</div>
+            </div>
+            <div class="circle" style="--clr: #04fc43">
+                <div class="dots sec_dot"></div>
+                <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="ss"></circle>
+                </svg>
+                <div id="seconds">00</div>
+            </div>
+            </div>
     </section>
-    <!-- clock section end -->
 
     <!-- technical event -->
-    <h1 class="home-title">Technical Events</h1>
+    <h1 class="home-bold-title">Technical Events</h1>
     <section class="technical-event">
       <div>
         <img src="images/technical-event.svg"   alt="">
@@ -113,9 +131,10 @@
     </section>
     <!-- technical event end -->
 
+    <div class="gray-line"></div>
 
     <!-- non technical event -->
-    <h1 class="home-title">Non-Technical Events</h1>
+    <h1 class="home-bold-title">Non-Technical Events</h1>
     <section class="technical-event" id="technical-event">
       <div>
         <img src="images/non-technical-event.svg"  alt="">
@@ -128,144 +147,124 @@
         <a href="events.html" class="index-btn">Events</a>
       </div>
     </section>
-    <!-- non technical event end -->
+
+    <div class="gray-line"></div>
 
     <section class="map">
-      <h1 class="home-title">Location</h1>
-      <div>
-        <a href="https://www.google.co.in/maps/place/SRM+Valliammai+Engineering+College/@12.8259881,80.0411421,19.48z/data=!4m6!3m5!1s0x3a52f70d79722631:0x49afcd4648f94894!8m2!3d12.8259442!4d80.0413128!16s%2Fm%2F076ybnz?entry=ttu" target="_blank"><img src="images/Loc.webp" alt=""></a>
-      </div>
+        <h1 class="home-bold-title">Location</h1>
+        <div>
+          <a href="https://www.google.co.in/maps/place/SRM+Valliammai+Engineering+College/@12.8259881,80.0411421,19.48z/data=!4m6!3m5!1s0x3a52f70d79722631:0x49afcd4648f94894!8m2!3d12.8259442!4d80.0413128!16s%2Fm%2F076ybnz?entry=ttu" target="_blank"><img src="images/Loc.webp" alt=""></a>
+        </div>
     </section>
 
+    <div class="color-line"></div>
+      <footer>
+        <div class="meida-links">
+          <a href="https://instagram.com/whitehatians?igshid=OGU0MmVlOWVjOQ=="
+          target="_blank"><img src="images/instagram.webp" alt="" style="width: 2.5rem" class="footer-icons-start"
+          /></a>
+          <a href="https://facebook.com/whitehatians"
+          target="_blank"><img src="images/facebook.webp" alt="" style="width: 2.5rem" class="footer-icons"
+          /></a>
+          <a href="https://linkedin.com/company/whitehatians"
+          target="_blank"><img src="images/linkedin.webp" alt="" style="width: 2.5rem" class="footer-icons"
+          /></a>
+          <a href="https://discord.gg/QKjrhegdx5" target="_blank"><img src="images/discord.webp" alt="" style="width: 2.5rem" class="footer-icons"/></a>
+          <a href="https://youtube.com/@whitehatians" target="_blank"><img src="images/youtube.png" alt="" style="width: 2.5rem" class="footer-icons"/></a>
+        </div>
+        <p id="copyright">&copy; All Rights Reserved</p>
+      </footer>
 
-    <div class="line-seperation"></div>
-    <footer>
-      <div class="meida-links">
-        <a href="https://instagram.com/whitehatians?igshid=OGU0MmVlOWVjOQ=="
-        ><img src="images/instagram.webp" alt="" style="width: 2.5rem" class="footer-icons-start"
-        /></a>
-        <a href="https://facebook.com/whitehatians"
-          ><img src="images/facebook.webp" alt="" style="width: 2.5rem" class="footer-icons"
-        /></a>
-        <a href="https://linkedin.com/company/whitehatians"
-          ><img src="images/linkedin.webp" alt="" style="width: 2.5rem" class="footer-icons"
-        /></a>
-        <a href="https://discord.gg/QKjrhegdx5"><img src="images/discord.webp" alt="" style="width: 2.5rem" class="footer-icons"/></a>
-      </div>
-      <p id="copyright">&copy; All Rights Reserved</p>
-  </footer>
-
-  </body>
-  <script>
-    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-    let interval = null;
-
-    document.querySelector("h1").onmouseover = (event) => {
-      let iteration = 0;
-
-      clearInterval(interval);
-
-      interval = setInterval(() => {
-        event.target.innerText = event.target.innerText
-          .split("")
-          .map((letter, index) => {
-            if (index < iteration) {
-              return event.target.dataset.value[index];
+    <script>
+            const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            let interval = null;
+            document.querySelector("h1").onmouseover = (event) => {
+            let iteration = 0;
+            clearInterval(interval);
+            interval = setInterval(() => {
+                event.target.innerText = event.target.innerText
+                .split("")
+                .map((letter, index) => {
+                    if (index < iteration) {
+                    return event.target.dataset.value[index];
+                    }
+                    return letters[Math.floor(Math.random() * 26)];
+                })
+                .join("");
+                if (iteration >= event.target.dataset.value.length) {
+                clearInterval(interval);
+                }
+                iteration += 1 / 4;
+            }, 30);
+            };
+    
+            let days = document.getElementById("days");
+            let hours = document.getElementById("hours");
+            let minutes = document.getElementById("minutes");
+            let seconds = document.getElementById("seconds");
+        
+            let dd = document.getElementById("dd");
+            let hh = document.getElementById("hh");
+            let mm = document.getElementById("mm");
+            let ss = document.getElementById("ss");
+        
+            let countdown = document.getElementById("countdown");
+            let wishDays = 10;
+    
+            let x = setInterval(function () {
+            let currentYear = new Date().getFullYear();
+            let newYear = new Date(`Sep 23, ${currentYear} 00:00:00`);
+            let now = new Date().getTime();
+            let distance = newYear - now;
+        
+            let d = Math.floor(distance / (1000 * 60 * 60 * 24));
+            let h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            let m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            let s = Math.floor((distance % (1000 * 60)) / 1000);
+        
+            days.innerHTML = d + "<br><span>Days</span>";
+            hours.innerHTML = h + "<br><span>Hours</span>";
+            minutes.innerHTML = m + "<br><span>Minutes</span>";
+            seconds.innerHTML = s + "<br><span>Seconds</span>";
+        
+            dd.style.strokeDashoffset = 440 - (440 * d) / 365;
+            hh.style.strokeDashoffset = 440 - (440 * h) / 24;
+            mm.style.strokeDashoffset = 440 - (440 * m) / 60;
+            ss.style.strokeDashoffset = 440 - (440 * s) / 60;
+        
+            if (distance < 0) {
+                document.querySelector(
+                ".text"
+                ).innerText = `Happy New Year ${currentYear}`;
             }
+            }, 1000);
+    
+       
+    
+    
+            const blob = document.getElementById("blob");
+            
+            window.onpointermove = event => { 
+            const { clientX, clientY } = event;
+            
+            blob.animate({
+                left: `${clientX}px`,
+                top: `${clientY}px`
+            }, { duration: 3000, fill: "forwards" });
+            }
+    
+            function preloader() {
+                let preloader = document.getElementById("preloader");
+                preloader.style.transition = "all 1s";
+                preloader.style.display = "none";
+            }
+            setTimeout(preloader, 9000);
+            let navigation = document.getElementById("mobile-navigation");
+            navigation.onclick = function () {
+              let navbar = document.getElementById("desktop-navigation");
+              navbar.classList.toggle("active");
+            }
+    </script>
 
-            return letters[Math.floor(Math.random() * 26)];
-          })
-          .join("");
-
-        if (iteration >= event.target.dataset.value.length) {
-          clearInterval(interval);
-        }
-
-        iteration += 1 / 4;
-      }, 30);
-    };
-
-    let days = document.getElementById("days");
-    let hours = document.getElementById("hours");
-    let minutes = document.getElementById("minutes");
-    let seconds = document.getElementById("seconds");
-
-    let dd = document.getElementById("dd");
-    let hh = document.getElementById("hh");
-    let mm = document.getElementById("mm");
-    let ss = document.getElementById("ss");
-
-    let countdown = document.getElementById("countdown");
-    let wishDays = 10;
-
-    let x = setInterval(function () {
-      let currentYear = new Date().getFullYear();
-      let newYear = new Date(`Sep 23, ${currentYear} 00:00:00`);
-      let now = new Date().getTime();
-      let distance = newYear - now;
-
-      let d = Math.floor(distance / (1000 * 60 * 60 * 24));
-      let h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      let m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      let s = Math.floor((distance % (1000 * 60)) / 1000);
-
-      days.innerHTML = d + "<br><span>Days</span>";
-      hours.innerHTML = h + "<br><span>Hours</span>";
-      minutes.innerHTML = m + "<br><span>Minutes</span>";
-      seconds.innerHTML = s + "<br><span>Seconds</span>";
-
-      dd.style.strokeDashoffset = 440 - (440 * d) / 365;
-      hh.style.strokeDashoffset = 440 - (440 * h) / 24;
-      mm.style.strokeDashoffset = 440 - (440 * m) / 60;
-      ss.style.strokeDashoffset = 440 - (440 * s) / 60;
-
-      if (distance < 0) {
-        document.querySelector(
-          ".text"
-        ).innerText = `Happy New Year ${currentYear}`;
-      }
-    }, 1000);
-
-   
-
-
-const blob = document.getElementById("blob");
-
-window.onpointermove = event => { 
-  const { clientX, clientY } = event;
-  
-  blob.animate({
-    left: `${clientX}px`,
-    top: `${clientY}px`
-  }, { duration: 3000, fill: "forwards" });
-}
-
-function preloader() {
-            let preloader = document.getElementById("preloader");
-            preloader.style.transition = "all 1s";
-            preloader.style.display = "none";
-        }
-        setTimeout(preloader, 1000);
-
-  </script>
-
-<script>
-  let mobileviewline = document.getElementById("mob-view");
-  mobileviewline.ontouchstart = function () {
-    let navbar = document.querySelector(".links");
-    navbar.classList.toggle("active");
-  }
-</script>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BZ6PX8NFN0"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-BZ6PX8NFN0');
-</script>
-
+</body>
 </html>
