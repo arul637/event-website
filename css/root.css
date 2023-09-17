@@ -235,11 +235,12 @@ footer .meida-links {
         background-color: var(--accent-color);
     }
     .active {
-        position: relative;
-        top: 1rem;
+        position: absolute;
+        top: 6rem;
         left: 0;
         right: 0;
-        background-color: rgba(0, 0, 0, 0.95);
+        z-index: 100;
+        background-color: rgba(0, 0, 0, 0.85);
         height: 450px;
         width: 100%;
         display: flex;
@@ -251,5 +252,6 @@ footer .meida-links {
     .active a {
         display: flex;
         color: white;
+        font-size: 1.5rem;
     }
 }
