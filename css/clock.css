@@ -5,6 +5,9 @@
     align-items: flex-end;
     gap: 30px;
     height: 50%;
+    width: 100%;
+    /* border: 2px solid red; */
+    margin: 0 auto;
 }
 
 #time .circle{
@@ -132,19 +135,30 @@
     0 0 60px var(--clr);
 }
 
+#last-date-for-registration {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Rubik';
+    margin-top: 1.5rem;
+}
+
 @media screen and (max-width:768px) {
     #time{
         height: 100%;
+        display: flex;
+        flex-wrap: nowrap;
         transform: scale(0.5);
-        justify-content: flex-start;
-        align-items: flex-start;
-        width: 40%;
+        justify-content: center;
+        align-items: center;
+        /* justify-content: flex-start; */
+        /* align-items: flex-start; */
     }
 
 
     #clock-title{
         font-size: 1.5rem;
-        width: 100%;
+        /* width: 100%; */
         left: 0;
         right: 0;
     }
